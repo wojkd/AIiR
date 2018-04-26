@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Historia obliczeń</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="login.html">Zalogowany jako: GUEST</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu"" >
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="calc_history.html">Historyczne obliczenia</a></li>
+					<li>
+					<br>
+					<font color="white">Login:
+					<input type="text" id="log1" name="login" placeholder="login"><br>
+					Hasło:</font>
+					<input type="password" id="pas1" name="password" placeholder="pass"><br>
+					
+					<button class="button primary">Log in</button>  
+					<button type="reset" onclick="pas1.value='',log1.value=''">Clear</button>
+					<br><br><br>
+					<center>Don't have an account?
+					<button class="button icon fa-plus-circle">Register</button></center>  
+					</li>
+				</ul>
+			</nav>
+
+		<!-- Highlights -->
+		<section class="wrapper">
+				<div class="inner">
+						
+						<h3>Historia obliczeń</h3>			
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>User</th>
+													<th>Number</th>
+													<th>Result</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Alpha</td>
+													<td>3216416516315421351616549846165498451</td>
+													<td>Prime</td>
+												</tr>
+												<tr>
+													<td>Beta</td>
+													<td>23165461651</td>
+													<td>Prime</td>
+												</tr>
+												<tr>
+													<td>Gamma</td>
+													<td>3154213516165</td>
+													<td>Prime</td>
+												</tr>
+												<tr>
+													<td>Delta</td>
+													<td>2313216</td>
+													<td>Not prime</td>
+												</tr>
+												<tr>
+													<td>Alpha</td>
+													<td>132165122215612</td>
+													<td>Not prime</td>
+												</tr>
+												
+												<tr>
+													<td>Gamma</td>
+													<td>6664545488997121321523</td>
+													<td>Prime</td>
+												</tr>
+												<tr>
+													<td>Gamma</td>
+													<td>2</td>
+													<td>Prime</td>
+												</tr>
+												<tr>
+													<td>Delta</td>
+													<td>11231465484122</td>
+													<td>Not prime</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td><a href="#">More...</a></td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h4>Historia obliczeń [Dane przykladowe]</h4>
+							<ul class="alt">
+								<li><a href="#">Liczba: 23144457 Wynik: liczba nie pierwsza</a></li>
+								<li><a href="#">Liczba: 68413519 Wynik: liczba pierwsza</a></li>
+								<li><a href="#">Liczba: 4567 Wynik: liczba pierwsza</a></li>
+								<li><a href="#">Liczba: 323224 Wynik: liczba nie pierwsza</a></li>
+							</ul>
+						</section>
+						<section>
+							<h3>Cel projektu</h3>
+							<p>---pusto---</p>
+						</section>
+						<section>
+							<h4>Dodatkowe informacje na temat projektu:</h4>
+							<ul class="plain">
+								<li><a href="https://trello.com/b/Aw5v5Gns/aplikacje-internetowe-i-rozproszone-projekt"><i class="icon fa-trello">&nbsp;</i>Trello</a></li>
+								<li><a href="https://github.com/wojkd/AIiR"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>
