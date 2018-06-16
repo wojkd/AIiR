@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Aplikacja rozproszona - projekt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<script src="../static/js/jquery.js"></script>
+		<script src="{{ url_for('static', filename='js/signUp.js') }}"></script>
+			
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Home</a>
+				<a class="logo" href="/showSignUp">Utworz konto</a>
+				<a class="logo" href="/showSignIn">Zaloguj</a>				
+			</header>
+
+		<!-- Nav -->
+		<!-- Highlights -->
+			<section class="wrapper">
+				<div class="inner">
+					<h1>{{error}}</h1>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>

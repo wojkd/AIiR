@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Aplikacja rozproszona - projekt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<script src="../static/js/jquery.js"></script>
+		<script src="{{ url_for('static', filename='js/signUp.js') }}"></script>
+			
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo">Zalogowany jako <font color="blue">{{welcome}}</font></a>
+				<a class="logo" href="/logout">Wyloguj</a>
+				<a class="logo" href="/calc_history">Pokaz Historie Obliczen</a>	
+				
+			</header>
+
+		<!-- Nav -->
+		<!-- Highlights -->
+			<section class="wrapper">
+				<div class="inner">
+					
+						<section>
+							<div class="content">
+								<header>
+								<FORM ACTION="/userHome" METHOD="POST">
+									<h3>Ręczne wprowadzanie liczby.</h3>
+									<p>Wprowadź liczbę:<p>
+									<input type="number" name="number"><br>
+									<p>Wprowadź ilość procesorów:<p>
+									<input type="number" name="proc" placeholder=1><br>
+
+									 <INPUT TYPE="SUBMIT" class="button fit small" VALUE="Oblicz">
+									<!--<button class="button fit small">Oblicz</button>-->
+								</header>
+							</div>
+						</section>
+						<section>
+							<div class="content">
+								<header>
+									<h3>Wczytywanie liczby z pliku.</h3>
+									<p>Wybrano plik:<p>  
+									<form action="#">
+									  <input type="file" name="input_file" accept=".txt">
+									  <button class="button fit small">Oblicz</button>
+									</form>
+								</header>
+							</div>
+						</section>
+					
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							
+						</section>
+						<section>
+							<h3>Cel projektu</h3>
+							<p>---pusto---</p>
+						</section>
+						<section>
+							<h4>Dodatkowe informacje na temat projektu:</h4>
+							<ul class="plain">
+								<li><a href="https://trello.com/b/Aw5v5Gns/aplikacje-internetowe-i-rozproszone-projekt"><i class="icon fa-trello">&nbsp;</i>Trello</a></li>
+								<li><a href="https://github.com/wojkd/AIiR"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>

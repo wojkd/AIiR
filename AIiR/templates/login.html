@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Log in page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<script src="../static/js/jquery.js"></script>		
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Home</a>
+				<a class="logo" href="/showSignUp">Register</a>
+			</header>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Log in</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<br>
+					<form class="form-signin" action="/validateLogin" method="post">
+					<label for="inputUsername" class="sr-only">Username:</label>
+					<input type="text" id="inputUsername" name="inputUsername" placeholder="Nazwa uzytkownika" required autofocus><br>
+					
+					<label for="inputPassword" class="sr-only">Password:</label>
+					<input type="password" id="inputPassword" name="inputPassword" placeholder="Haslo" required><br>
+					
+					<button id="btnSignIn" type="submit" class="button primary">Log in</button>  
+					<button type="reset" onclick="pas1.value='',log1.value=''">Clear</button>
+						
+					<br><br><br>
+					<center>Don't have an account?
+					<a href="/showSignUp">
+					<button class="button icon fa-plus-circle">Register</button></center>  
+					</a>
+					
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h4>Historia obliczeń [Dane przykladowe]</h4>
+							<ul class="alt">
+								<li><a href="#">Liczba: 23144457 Wynik: liczba nie pierwsza</a></li>
+								<li><a href="#">Liczba: 68413519 Wynik: liczba pierwsza</a></li>
+								<li><a href="#">Liczba: 4567 Wynik: liczba pierwsza</a></li>
+								<li><a href="#">Liczba: 323224 Wynik: liczba nie pierwsza</a></li>
+							</ul>
+						</section>
+						<section>
+							<h3>Cel projektu</h3>
+							<p>---pusto---</p>
+						</section>
+						<section>
+							<h4>Dodatkowe informacje na temat projektu:</h4>
+							<ul class="plain">
+								<li><a href="https://trello.com/b/Aw5v5Gns/aplikacje-internetowe-i-rozproszone-projekt"><i class="icon fa-trello">&nbsp;</i>Trello</a></li>
+								<li><a href="https://github.com/wojkd/AIiR"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/extra.js') }}"></script>
+	</body>
+</html>

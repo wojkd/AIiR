@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Aplikacja rozproszona - projekt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<script src="../static/js/jquery.js"></script>		
+		<script src="../static/js/signUp.js"></script>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Home</a>
+				<a class="logo" href="/showSignIn">Log in</a>
+			</header>
+
+		<!-- Heading -->
+			<div id="heading">
+				<h1>REGISTER</h1>
+			</div>
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<h2>Sign Up</h2>
+					<p>Please fill sign up form to create an account</p>
+				<form action="/signUp" method="POST">
+				    <div>
+				<label for="userName">Username</label>
+			<input type="text" id="userName" name="userName" class="form-control" placeholder="Username" requered autofocus>
+				<label for="inputPassword">Password</label>
+			<input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" requered>
+		
+					<input type="submit" id="btnSignUp" class="btn btn-primary" value="Sign Up now">
+					<input type="reset" class="btn btn-default" value="Reset">
+				    </div>
+				    <p>Already have an account? <a href="/showSignIn">Login here</a>.</p>
+				</form>
+				</div>
+			</section>
+		<!-- Scripts -->
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+				</div>
+			</footer>
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>
